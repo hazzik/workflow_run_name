@@ -1,0 +1,13 @@
+name: WF Run
+on:
+  workflow_run:
+    workflows:
+      - Test workflow
+    types:
+      - requested
+      - completed
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.event.workflow_run }}
