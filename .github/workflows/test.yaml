@@ -1,0 +1,11 @@
+name: Test workflow
+run-name: Unexpected value
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 1
