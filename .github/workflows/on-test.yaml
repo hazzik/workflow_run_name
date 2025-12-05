@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "name          = '${{ github.event.workflow_run.name }}'"
-        echo "display_title = '${{ github.event.workflow_run.display_title }}'"
+          echo "name          = '${{ github.event.workflow_run.name }}'"
+          echo "display_title = '${{ github.event.workflow_run.display_title }}'"
