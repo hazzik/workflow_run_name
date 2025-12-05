@@ -10,4 +10,6 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ toJSON(github.event.workflow_run) }}"
+      - run: |
+        echo "name          = '${{ github.event.workflow_run.name }}'"
+        echo "display_title = '${{ github.event.workflow_run.display_title }}'"
